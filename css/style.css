@@ -45,6 +45,8 @@ header div a img {
     background-color: var(--gray-600);
     border-radius: 5px;
     padding-left: 10px;
+    border-width: 0;
+    outline: none;
 }
 #tqt::placeholder {
     color: rgba(255, 255, 255, 0.8);
@@ -62,7 +64,7 @@ header div a img {
     text-decoration: none;
 }
 .search a {
-    margin-right: 145px;
+    margin-right: 190px;
     color: var(--white);
     text-decoration: none;
     font-size: 1.5rem;
@@ -77,36 +79,136 @@ main {
     margin: auto;
 }
 .teco {
-    width: 19%;
+    width: 18%;
 }
 .teco aside {
     display: flex;
     flex-direction: column;
 }
+aside {
+    width: 75%;
+    margin-right: auto;
+}
 .teco aside ul {
     list-style: none;
     padding: 0;
-}
-.teco aside p {
-    color: var(--white);
 }
 .teco aside ul li a {
     color: var(--white);
     text-decoration: none;
 }
 .first, .second {
-    margin: 25% 0;
+    margin-top: 80px;
+    padding-bottom: 80px;
 }
-.first p, .second p {
-    margin: 20px 0;
+.first {
+    border-bottom: 2px solid var(--gray-600);
 }
-.first ul li, .second ul li {
-    margin: 7px 0;
-    
+.teco aside ul li {
+    margin-top: 18px;
+}
+.teco aside ul li:first-child {
+    margin-top: 30px;
+}
+.first ul li a, .second ul li a{
+    display: flex;
+    align-items: center;
+    color: var(--white);
 }
 .first ul li a img, .second ul li a img {
-    margin: 0 10px;
-    background-color: var(--gray-600);
+    margin-right: 10px;
     padding: 5px;
+    background-color: var(--gray-600);
     border-radius: 5px;
+}
+.first > p, .second > p {
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+    /*main*/
+
+.firstSec {
+    margin-top: 70px;
+}
+h1 {
+    color: var(--white);
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+}
+.one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    color: var(--white);
+}
+.top > img {
+    width: 750px;
+    height: 320px;
+    border-radius: 15px;
+}
+.top2 > img {
+    width: 350px;
+    height: 320px;
+    border-radius: 15px;
+}
+.top, .top2 {
+    position: relative;
+}
+.top > div {
+    position: absolute;
+    top: 0;
+    width: 720px;
+    height: 320px;
+    background-color: var(--overlay);
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+.top2 > div {
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 320px;
+    background-color: var(--overlay);
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+.olie img {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--border-45);
+    inset: 0 0 0 2px var(--blanc);
+    border:  3px solid transparent;
+}
+.top2 h2 {
+    width: 65%;
+    margin-top: 25px;
+}
+.top h2 {
+    margin-top: 25px;
+}
+.top div span, .top2 div span {
+    align-self: flex-end;
+    margin-right: 35px;
+    background-color: var(--gray-700);
+    padding: 4px 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+.olie {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.olie div p:last-child {
+    color: var(--border-45);
+    font-size: 0.7rem;
+    margin-top: 8px;
 }
